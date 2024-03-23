@@ -1,16 +1,11 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AlumController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\ConnectionController;
-
-
-// use App\Models\Alum;
-// use App\Models\Event;
-
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +34,6 @@ Route::post('/jobs/{job}/apply', [JobController::class, 'apply'])->name('jobs.ap
 Route::post('/jobs/{job}/storeApplication', [JobController::class, 'apply'])->name('jobs.storeApplication');
 
 Route::resource('/connections', ConnectionController::class);
-
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
