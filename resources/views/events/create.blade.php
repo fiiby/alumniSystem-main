@@ -16,7 +16,7 @@
             </ul>
         </div>
         @endif
-
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
         <form action="{{ route('events.store') }}" method="POST">
             @csrf
 

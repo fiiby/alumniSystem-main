@@ -2,7 +2,7 @@
     <x-slot name="header">
         Delete Event
     </x-slot>
-
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <x-slot name="content">
         <h1>Delete Event</h1>
 

@@ -5,6 +5,7 @@
             {{ __('Edit Alum') }}
         </h2>
     </x-slot>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <div class="container">
         <div class="row justify-content-center">
@@ -38,4 +39,4 @@
         </div>
     </div>
 </x-app-layout>
-@endsection 
+ 

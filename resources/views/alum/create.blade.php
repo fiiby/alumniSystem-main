@@ -1,12 +1,12 @@
 <!-- resources/views/alum/create.blade.php -->
 
-<x-app-layout>
+<x-app-layout style="background-color: #007bff;">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Create New Alum') }}
         </h2>
     </x-slot>
-
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -38,4 +38,4 @@
         </div>
     </div>
 </x-app-layout>
-@endsection
+{{-- @endsection --}}
